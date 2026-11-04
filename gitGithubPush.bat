@@ -77,7 +77,7 @@ if errorlevel 1 (
     exit /b
 )
 echo.
-echo ✔ GitHub 上線約 1 分鐘：https://goodwaymis9527.github.io/
+echo ✔ GitHub 上線約 1 分鐘：https://goodwaymis9527.github.io/wwwHttps/
 echo.
 
 echo ✅ 全部完成！
