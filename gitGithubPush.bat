@@ -2,8 +2,11 @@
 chcp 65001 >nul
 rem git 別名：pg = push -u origin main (Gitea) / ph = push -u github main (GitHub) / gp = pull --ff-only origin main
 
-rem ── 順序很重要：先 push submodule（LucaWebVercel），外層 repo 才會記錄正確的 commit 指針 ──
+rem ── 順序很重要：先 push 兩個 submodule，外層 repo 才會記錄正確的 commit 指針 ──
 call :PUSH_REPO "D:\goodwaymis9527\LucaWebVercel" "luca-web (submodule)" "from Goodway 更新 LucaWebVercel"
+if errorlevel 1 goto FAIL
+
+call :PUSH_REPO "D:\goodwaymis9527\LucaAWS" "luca-aws (submodule)" "from Goodway 更新 LucaAWS"
 if errorlevel 1 goto FAIL
 
 call :PUSH_REPO "D:\goodwaymis9527" "GitHub Pages" "from Goodway 更新 goodwaymis9527"
@@ -13,6 +16,7 @@ echo.
 rem 根目錄的 index.html 是 meta refresh 轉送頁，網站本體在 wwwHttps/ 子資料夾
 echo ✔ GitHub 上線約 1 分鐘：https://goodwaymis9527.github.io/wwwHttps/  （根頁轉送到 /wwwHttps/）
 echo ✔ luca-web（動態網頁 / Vercel）：https://github.com/goodwaymis9527/luca-web
+echo ✔ luca-aws（正式區 / ECS Fargate）：https://github.com/goodwaymis9527/LucaAWS
 echo.
 echo ✅ 全部完成！
 echo ---
