@@ -1,3 +1,6 @@
 [submodule "LucaWebVercel"]
 	path = LucaWebVercel
 	url = https://github.com/goodwaymis9527/luca-web.git
+[submodule "LucaAWS"]
+	path = LucaAWS
+	url = https://github.com/goodwaymis9527/LucaAWS.git
