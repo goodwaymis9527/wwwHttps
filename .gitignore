@@ -1,0 +1,6 @@
+# OpenCode 設定檔內含 API key，不入倉庫
+# 注意：舊 commit（含公開的 opencode.json）仍在 GitHub 上，key 請手動撤銷
+opencode.json
+
+# 任務紀錄資料夾（YYYYMMDD_XXX_OpenCode），避免出現在网站上
+*_OpenCode/

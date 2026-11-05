@@ -10,7 +10,8 @@ call :PUSH_REPO "D:\goodwaymis9527" "GitHub Pages" "from Goodway 更新 goodwaym
 if errorlevel 1 goto FAIL
 
 echo.
-echo ✔ GitHub 上線約 1 分鐘：https://goodwaymis9527.github.io/wwwHttps/wwwHttps/
+rem 根目錄的 index.html 是 meta refresh 轉送頁，網站本體在 wwwHttps/ 子資料夾
+echo ✔ GitHub 上線約 1 分鐘：https://goodwaymis9527.github.io/wwwHttps/  （根頁轉送到 /wwwHttps/）
 echo ✔ luca-web（動態網頁 / Vercel）：https://github.com/goodwaymis9527/luca-web
 echo.
 echo ✅ 全部完成！
