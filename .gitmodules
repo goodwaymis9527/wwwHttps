@@ -4,3 +4,6 @@
 [submodule "LucaAWS"]
 	path = LucaAWS
 	url = https://github.com/goodwaymis9527/LucaAWS.git
+[submodule "LucaPython"]
+	path = LucaPython
+	url = https://github.com/goodwaymis9527/LucaPython.git
